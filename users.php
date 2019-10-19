@@ -40,7 +40,7 @@ $queryfetch=mysqli_fetch_all($userquery,MYSQLI_ASSOC);//for all row
 	<form action="login.php" method="post">
 		<button   type="submit" class="btn btn-primary">Logout</button>
 	</form>
-</div>
+
 
 
 
@@ -96,6 +96,8 @@ $queryfetch=mysqli_fetch_all($userquery,MYSQLI_ASSOC);//for all row
 	</table>
 	
 	
+</div>	
+
 	
 </body>
 </html>

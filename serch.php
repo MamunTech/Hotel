@@ -51,7 +51,7 @@ if(isset($_POST['serch'])){
 	<form action="login.php" method="post">
 		<button   type="submit" class="btn btn-primary">Logout</button>
 	</form>
-</div>
+
 	
 	
 	
@@ -128,6 +128,10 @@ if(isset($_POST['serch'])){
 	
 	echo nl2br("\r\n");
 	?>
+
+	
+</div>	
+
 	
 </body>
 </html>

@@ -62,18 +62,20 @@ if(isset($_POST['serch'])){
 	</form>
 	<table class="table table-bordered table-hover">
 		<tr>
-		<th>Serial</th>
+		th>Serial</th>
 		<th>Room</th>
 		<th>Price</th>
 		<th>Name</th>
 		<th>Phone</th>
 		<th>Email</th>
 		<th>Passport/NID</th>
-		<th>Image</th>
 		<th>Address</th>
 		<th>Purpose</th>
-		<th>Date</th>
-		<th>Time</th>
+		<th>In Date</th>
+		<th>In Time</th>
+		<th>Status</th>
+		<th>Out Date</th>
+		<th>Out Time</th>
 		</tr>
 	
 	
@@ -85,12 +87,13 @@ if(isset($_POST['serch'])){
 		<td><?php echo $value['phone']; ?></td>
 		<td><?php echo $value['email']; ?></td>
 		<td><?php echo $value['passport_nid']; ?></td>
-		<td><?php echo $value['img']; ?></td>
 		<td><?php echo $value['address']; ?></td>
 		<td><?php echo $value['purpose']; ?></td>
-		<td><?php echo $value['date']; ?></td>
-		<td><?php echo $value['time']; ?></td>
-		
+		<td><?php echo $value['in_date']; ?></td>
+		<td><?php echo $value['in_time']; ?></td>
+		<td><?php echo $value['status']; ?></td>
+		<td><?php echo $value['out_date']; ?></td>
+		<td><?php echo $value['out_time']; ?></td>
 		
 	</tr>
 	

@@ -8,13 +8,14 @@ if(isset($_POST['reg_submit'])){
 	$phone=$_POST['phone'];
 	$email=$_POST['email'];
 	$passport_nid=$_POST['passport_nid'];
-	$image=$_POST['image'];
 	$address=$_POST['address'];
 	$purpose=$_POST['purpose'];
-	$date=$_POST['date'];
-	$time=$_POST['time'];
+	$in_date=$_POST['in_date'];
+	$in_time=$_POST['in_time'];
+	$status=$_POST['status'];
 	
-	$reg_insert=mysqli_query($connect,"INSERT INTO user_reg (room,price,name,phone,email,passport_nid,img,address,purpose,date,time) VALUES ('$room','$price','$name','$phone','$email','$passport_nid','$image','$address','$purpose','$date','$time')");
+	
+	$reg_insert=mysqli_query($connect,"INSERT INTO user_reg (room,price,name,phone,email,passport_nid,address,purpose,in_date,in_time,status) VALUES ('$room','$price','$name','$phone','$email','$passport_nid','$address','$purpose','$in_date','$in_time','$status')");
 	if($reg_insert){
 		$usersuccess='Your registration has been successful';
 	}
@@ -90,10 +91,6 @@ if(isset($_POST['reg_submit'])){
 			<input type="text" name="passport_nid" class="form-control" />
 		</div>
 		<div class="form-group">
-			<lable>Image</lable>
-			<input type="text" name="image" class="form-control" />
-		</div>
-		<div class="form-group">
 			<lable>Address</lable>
 			<input type="text" name="address" class="form-control" />
 		</div>
@@ -102,12 +99,19 @@ if(isset($_POST['reg_submit'])){
 			<input type="text" name="purpose" class="form-control" />
 		</div>
 		<div class="form-group">
-			<lable>Date</lable>
-			<input type="date" name="date" class="form-control" required />
+			<lable>In Date</lable>
+			<input type="date" name="in_date" class="form-control" required />
 		</div>
 		<div class="form-group">
-			<lable>Time</lable>
-			<input type="time" name="time" class="form-control" required />
+			<lable>In Time</lable>
+			<input type="time" name="in_time" class="form-control" required />
+		</div>
+		<div class="form-group">
+			<lable>Guest Status: </lable>
+				<select name="status">
+					<option>In</option>
+					<option>Out</option>
+				</select>
 		</div>
 		<button type="submit"  name="reg_submit" class="btn btn-primary">SUBMIT</button>
 		

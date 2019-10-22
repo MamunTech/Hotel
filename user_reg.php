@@ -110,7 +110,9 @@ if(isset($_POST['reg_submit'])){
 			<lable>Guest Status: </lable>
 				<select name="status">
 					<option>In</option>
+					<!--
 					<option>Out</option>
+					-->
 				</select>
 		</div>
 		<button type="submit"  name="reg_submit" class="btn btn-primary">SUBMIT</button>

@@ -27,7 +27,8 @@ $queryfetch=mysqli_fetch_all($userquery,MYSQLI_ASSOC);//for all row
  </head>
 <body>
 
-<div class="container">	
+<div class="container">
+	
 	<form action="user_reg.php" method="post">
 		<button   type="submit"    class="btn btn-primary">Guest Registration</button>
 	</form>
@@ -62,6 +63,7 @@ $queryfetch=mysqli_fetch_all($userquery,MYSQLI_ASSOC);//for all row
 		<th>Status</th>
 		<th>Out Date</th>
 		<th>Out Time</th>
+		<th>Payment</th>
 		</tr>
 	
 	<?php
@@ -85,6 +87,7 @@ $queryfetch=mysqli_fetch_all($userquery,MYSQLI_ASSOC);//for all row
 		<td><?php echo $value['status']; ?></td>
 		<td><?php echo $value['out_date']; ?></td>
 		<td><?php echo $value['out_time']; ?></td>
+		<td><?php echo $value['payment']; ?></td>
 		
 		
 	</tr>
